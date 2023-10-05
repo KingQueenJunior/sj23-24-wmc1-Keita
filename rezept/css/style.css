@@ -1,0 +1,52 @@
+body {
+  background-color: lightgrey;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+img{
+  width: 300;
+}
+
+table{
+  width: 50%;
+}
+ 
+.top{
+  background-color:  rgb(78, 141, 229);
+  border-radius: 15px 50px 30px 5px;
+      padding: 9px;
+      margin-bottom: 20px;
+}
+
+.mid{
+  background-color:  rgb(78, 141, 229);
+  border-radius: 15px 50px 30px 5px;
+      padding: 9px;
+      margin-bottom: 20px;
+    
+}
+
+
+.bot{
+  background-color: rgb(78, 141, 229);
+  border-radius: 15px 50px 30px 5px;
+      padding: 9px;
+      margin-bottom: 20px;
+}
+
+.vid{
+  background-color:  rgb(78, 141, 229);
+  border-radius: 15px 50px 30px 5px;
+      padding: 9px;
+      margin-bottom: 20px;
+  
+}
+table,th,td{
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+
+}
+
+tr:nth-child(even) {
+  background-color:#43758c;
+}
