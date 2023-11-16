@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    max-width: 1000px;
+    margin: auto;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+nav {
+    position: fixed;
+    background-color: #16416B;
+    width: 100%;
+    padding: 0.75rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.nav-options {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+}
+
+.nav-options:hover {
+    background-color: steelblue;
+}
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon span {
+        background-color: white;
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #16416B;
+    }
+
+    .nav-options {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 1rem;
+    }
+}
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+main {
+    background-color: steelblue;
+    padding: 0.75rem;
+    color: white;
+}
+
+.input{
+    background-color: lightgray;
+}
+
+.label{
+    margin-left: 10px;
+    margin-top: 10px
+}
+
+.inputs{
+    margin-left: 10px;
+}
+
+.submit{
+    padding: 10px;
+    margin: 10px;
+}
+footer {
+    background-color: #16416B;
+    width: 100%;
+    padding: 0.75rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}

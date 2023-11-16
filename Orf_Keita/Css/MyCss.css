@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+/* Betrifft die ganze Webseite */
+
+*{
+    max-width: 1000px;
+    margin: auto;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Navbar und Footer */
+
+nav {
+    position: fixed;
+    background-color: #16416B;
+    width: 100%;
+    padding: 0.75rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.nav-options {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+}
+
+.nav-options:hover {
+    background-color: steelblue;
+}
+
+footer {
+    background-color: #16416B;
+    width: 100%;
+    padding: 0.75rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Media query for 600px and below */
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon span {
+        background-color: white;
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #16416B;
+    }
+
+    .nav-options {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 1rem;
+    }
+}
+
+.adresse {
+    border-top: grey 0.15rem solid;
+}
+
+/* Main Section */
+
+main {
+    background-color: steelblue;
+    padding: 0.75rem;
+    color: white;
+}
+
+.main-img {
+    width: 100%;
+}
+
+.main-text {
+    margin: 2rem 0rem 1rem;
+}
+
+h1, h2{
+    padding-top: 2rem;
+}
+
+h3 {
+    padding: 1rem 0rem 1.25rem 0rem;
+}
+
+.writing {
+    padding-left: 2rem;
+}
+
+/* Putin's Zitat */
+/* Putin's Zitat */
+blockquote {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    background-color: rgba(30, 144, 255, 0.2);
+    border-left: 10px solid dodgerblue;
+    padding: 15px 15px 15px 15px; /* Adjust padding as needed */
+
+    text-align: left;
+    position: relative;
+    overflow: hidden; /* Clear floats */
+}
+
+blockquote img {
+    width: 9.375rem;
+    float: left;
+    margin-right: 3.125rem;
+}
+
+blockquote p {
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    display: inline-block; /* Set the display to inline-block */
+    vertical-align: middle; /* Align vertically in the middle */
+    margin: auto;
+}
+
+blockquote cite {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    clear: left; /* Ensure cite is below the floated image */
+    display: block; /* Display cite as a block element */
+    margin-top: 10px; /* Add space between p and cite */
+    text-align: center;
+}
+
+.cite{
+    text-align: center;
+}
