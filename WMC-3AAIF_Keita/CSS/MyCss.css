@@ -1,0 +1,285 @@
+* {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-family: c;
+}
+
+body {
+    align-self: center;
+    margin: 0;
+    width: 100%;
+}
+
+/* Header Styles */
+header {
+    background-image: url('https://assets.vogue.com/photos/59a6ee9ac3f99f428736c1a7/master/w_1600,c_limit/01-newfoundland-canada-travel-guide.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: right;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+header h1,
+header h3 {
+    position: relative;
+    right: 50px;
+}
+
+header h1 {
+    padding-top: 400px;
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+header h3 {
+    padding-bottom: 400px;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+/* One Section Styles */
+#one {
+    text-align: center;
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    bottom: 70px;
+}
+
+#one section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#one hr {
+    width: 200px;
+}
+
+#one img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+address {
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 15px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+/* Article Styles */
+body article {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#whale img {
+    box-shadow: 10px 10px 5px gray;
+}
+
+#whale h1,
+#whale p {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+article section {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#lead h1 {
+    padding-top: 30px;
+}
+
+#lead p {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    line-height: 40px;
+}
+
+#lead video {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+/* Table Styles */
+#table {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#geology,
+#Wildlife {
+    padding-top: 30px;
+    width: 100%;
+}
+
+#geotitle,
+#wildtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: stretch;
+}
+
+#geotitle img,
+#geotitle h1,
+#wildtitle img,
+#wildtitle h1 {
+    padding: 15px;
+}
+
+#geotitle img,
+#wildtitle img {
+    width: 35px;
+}
+
+#Wildlife :nth-child(2) img,
+#geology :nth-child(2) img {
+    width: 100%;
+}
+
+#Wildlife :nth-child(2) section,
+#geology :nth-child(2) section {
+    padding: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    background-image: url('https://assets.vogue.com/photos/59a6ee9ac3f99f428736c1a7/master/w_1600,c_limit/01-newfoundland-canada-travel-guide.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 30px;
+}
+
+footer section {
+    margin: 15px;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer input {
+    width: 60%;
+    background: none;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 35px;
+}
+
+footer button {
+    height: 35px;
+    width: 16%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+footer p {
+    padding-bottom: 100px;
+}
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+    #one {
+        width: 100%;
+        right: auto;
+        left: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    #geology :nth-child(2),
+    #Wildlife :nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: normal;
+    }
+
+    #Wildlife :nth-child(2) *,
+    #geology :nth-child(2) * {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 90%;
+    }
+
+    #whale img {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #one {
+        width: 60%;
+        right: 20%;
+        left: 20%;
+        margin-top: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    #geology :nth-child(2),
+    #Wildlife :nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: normal;
+    }
+
+    #Wildlife :nth-child(2) *,
+    #geology :nth-child(2) * {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: left;
+        width: calc(100% / 3);
+    }
+
+    #whale img {
+        width: 40%;
+        padding: 15px;
+    }
+}
