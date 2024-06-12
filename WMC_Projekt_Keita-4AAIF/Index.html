@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="myCss.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Management</h1>
+        <button onclick="sortByType()">Sort by Type</button>
+        <div id="task-list"></div>
+        <button onclick="showNewTaskForm()">Add New Task</button>
+        <div id="new-task-form" class="hidden">
+            <h2>New Task</h2>
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="description" placeholder="Description">
+            <select id="type">
+                <option value="Bug">Bug</option>
+                <option value="Feature">Feature</option>
+                <option value="Improvement">Improvement</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Design">Design</option>
+                <option value="Research">Research</option>
+                <option value="Documentation">Documentation</option>
+                <option value="Operations">Operations</option>
+                <option value="Human Resources">Human Resources</option>
+                <option value="Sales">Sales</option>
+                <option value="Customer Support">Customer Support</option>
+                <option value="Finance">Finance</option>
+                <option value="Legal">Legal</option>
+            </select>
+            <select id="priority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <input type="text" id="assignee" placeholder="Assignee">
+            <button onclick="addTask()">Add Task</button>
+            <button onclick="hideNewTaskForm()">Cancel</button>
+        </div>
+    </div>
+    <script src="JavaScript.js"></script>
+</body>
+</html>
